@@ -209,7 +209,7 @@ nav {
 
   /* Push grid down so it doesn't overlap logo/search bar */
   .grid {
-    margin-top: -1000px; /* logo height + search bar + padding */
+    margin-top: -500px; /* logo height + search bar + padding */
     width: 100vw;
     max-width: 100vw;
   }
