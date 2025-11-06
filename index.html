@@ -4,34 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>VIDEO ASSAULT — Landscape A5 Grid</title>
+
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <div class="container">
+  <!-- Side menu -->
   <nav>
-    <img src="VA-Logo-NoBG.png" alt="Video Assault Logo" id="banner" />
+    <img src="VA-Logo-NoBG.png" alt="Video Assault Logo" id="logo" />
+
     <div class="links">
       <a>PRINT ARCHIVE</a>
       <a>MERCH</a>
       <a>RIG RUNDOWN</a>
       <a>FOLLOW</a>
     </div>
+
     <div class="bottom">
       <div class="counter">PRINT COUNT: 16</div>
     </div>
   </nav>
 
+  <!-- Main content -->
   <div>
     <div id="issue1" class="tabContent active">
       <div class="grid grid3col">
-
-        <!-- ✅ Shopify Buy Button in first tile -->
+        <!-- Tile with Shopify button -->
         <div class="tile tile-with-button">
           <img src="Prints/XeroxScanTest.jpg" alt="">
           <div id="product-component"></div>
         </div>
+
+        <div class="tile tile-with-button">
+          <img src="Prints/XeroxScanTest2.jpg" alt="">
+          <div id='product-component-2'></div>
+        </div>
+
+        
 
         <div class="tile"><img src="Prints/XeroxScanTest2.jpg" alt=""></div>
         <div class="tile"><img src="Prints/XeroxScanTest3.jpg" alt=""></div>
@@ -43,12 +56,13 @@
   </div>
 </div>
 
-<!-- Lightbox -->
+<!-- Lightbox overlay -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img class="lightbox-content" id="lightbox-img" alt="">
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>

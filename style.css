@@ -7,14 +7,14 @@ body {
   color: #111;
 }
 
-/* Container with two columns */
+/* Main container with two columns */
 .container {
   display: grid;
   grid-template-columns: 220px 1fr;
   align-items: start;
 }
 
-/* Logo and nav */
+/* Sticky logo at the top of nav */
 #banner {
   position: sticky;
   top: 20px;
@@ -24,21 +24,23 @@ body {
   pointer-events: none;
 }
 
+/* Sticky side menu */
 nav {
   position: sticky;
   top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   padding-bottom: 20px;
   box-sizing: border-box;
 }
 
+/* Menu links */
 nav .links {
   display: flex;
   flex-direction: column;
 }
-
 nav a {
   display: block;
   color: #111;
@@ -53,6 +55,7 @@ nav a:hover {
   transform: translateX(2px);
 }
 
+/* Bottom section */
 nav .bottom {
   margin-top: auto;
   padding: 10px;
@@ -61,7 +64,7 @@ nav .counter {
   color: #b82e12;
 }
 
-/* Grid */
+/* Grid tiles */
 .grid {
   display: grid;
   gap: 2px;
@@ -83,7 +86,7 @@ nav .counter {
   transition: transform 0.25s ease, filter 0.25s ease;
 }
 
-/* Grid columns */
+/* Three-column grid */
 .grid3col {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -145,8 +148,14 @@ nav .counter {
   color: #611c20;
 }
 
-/* Buy Button tile */
+/* Tile with Shopify button */
 .tile-with-button {
   position: relative;
   overflow: visible;
+}
+.tile-with-button div {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10;
 }
