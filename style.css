@@ -3,25 +3,52 @@ body {
   padding: 0;
   font-family: "Bebas Neue", sans-serif;
   font-size: 32px;
-  background: #fff;
+  background: #ffffff;
   color: #111;
 }
 
 /* Main container with two columns */
 .container {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 100px 1fr;
   align-items: start;
 }
 
 /* Sticky logo at the top of nav */
-#banner {
-  position: sticky;
+#logo {
+  position: fixed;     /* float over both columns */
+  top: 20px;           /* distance from top */
+  left: 20px;          /* distance from left edge */
+  width: 400px;        /* increase width to spill into column 2 */
+  z-index: 99;       /* on top of everything */
+  pointer-events: none; /* optional, so it doesn't block clicks */
+}
+
+/* Floating transparent search bar */
+#search-bar {
+  position: fixed;
   top: 20px;
-  width: 300px;
-  margin-bottom: 40px;
-  z-index: 10;
-  pointer-events: none;
+  right: 20px;
+  width: 220px;
+  padding: 8px 12px;
+  font-family: "Arial Black", sans-serif;
+  font-size: 16px;
+  color: #111;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 200;
+  outline: none;
+  transition: background 0.2s ease;
+}
+
+#search-bar::placeholder {
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+#search-bar:focus {
+  background: rgba(255, 255, 255, 0.6);
 }
 
 /* Sticky side menu */
@@ -36,40 +63,25 @@ nav {
   box-sizing: border-box;
 }
 
-/* Menu links */
-nav .links {
-  display: flex;
-  flex-direction: column;
-}
-nav a {
-  display: block;
+#print-counter {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-family: "Arial Black", sans-serif;
+  font-size: 18px;
   color: #111;
-  text-decoration: none;
-  margin-bottom: 10px;
-  padding: 6px 8px;
-  border-left: 3px solid transparent;
-  transition: border 0.2s, transform 0.2s;
-}
-nav a:hover {
-  border-left: 3px solid #611c20;
-  transform: translateX(2px);
+  z-index: 99;
+  padding: 4px 4px;
+  border-radius: 2px;
 }
 
-/* Bottom section */
-nav .bottom {
-  margin-top: auto;
-  padding: 10px;
-}
-nav .counter {
-  color: #b82e12;
-}
 
 /* Grid tiles */
 .grid {
   display: grid;
-  gap: 2px;
-  width: calc(100vw - 240px);
-  max-width: calc(100vw - 240px);
+  gap: 1px;
+  width: calc(100vw - 140px);
+  max-width: calc(100vw - 140px);
 }
 .tile {
   border: 1px solid #999;
@@ -158,4 +170,11 @@ nav .counter {
   bottom: 10px;
   right: 10px;
   z-index: 10;
+}
+
+.shopify-buy__cart-toggle {
+  position: fixed !important;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
 }

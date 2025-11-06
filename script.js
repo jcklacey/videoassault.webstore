@@ -17,21 +17,57 @@ lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.st
 (function () {
   const scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
 
-  // Array of products to initialize
+  // Array of products to initialize — add "title" for search
   const products = [
     {
       id: '8872419459307',
-      nodeId: 'product-component'
+      nodeId: 'product-component',
+      title: 'Flagbearer'
     },
     {
       id: '8872419819755',
-      nodeId: 'product-component-2'
+      nodeId: 'product-component-2',
+      title: 'Test2'
     }
-    // Add future products here:
-    // { id: 'NEW_ID', nodeId: 'NEW_NODE_ID' }
+    // Add future products here with titles:
+    // { id: 'NEW_ID', nodeId: 'NEW_NODE_ID', title: 'Product Name' }
   ];
 
-  // Default options preserved exactly
+  // Update the print counter dynamically
+  const printCounter = document.getElementById('print-counter');
+  if (printCounter) {
+    printCounter.textContent = 'PRINT COUNT: ' + products.length;
+  }
+
+  // --------------------------
+  // SEARCH BAR FUNCTIONALITY
+  // --------------------------
+function initializeSearchFilter() {
+  const searchBar = document.getElementById('search-bar');
+  if (!searchBar) return;
+
+  // Normalize titles for simpler search
+  products.forEach(product => {
+    product._searchTitle = product.title.toLowerCase().replace(/[^a-z0-9]/g, '');
+  });
+
+  searchBar.addEventListener('input', () => {
+    const query = searchBar.value.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    products.forEach(product => {
+      const tile = document.getElementById(product.nodeId)?.closest('.tile-with-button');
+      if (!tile) return;
+
+      // Only search against the normalized title from the array
+      tile.style.display = product._searchTitle.includes(query) ? '' : 'none';
+    });
+  });
+}
+
+
+  // --------------------------
+  // Default Shopify options
+  // --------------------------
   const defaultOptions = {
     product: {
       layout: 'horizontal',
@@ -104,11 +140,15 @@ lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.st
     },
     toggle: {
       styles: {
-        toggle: { "background-color": "#3f3939ff", ":hover": { "background-color": "#a62929" } }
+        toggle: 
+        {"background-color": "#3f3939ff", ":hover": { "background-color": "#a62929" } }
       }
     }
   };
 
+  // --------------------------
+  // SHOPIFY INITIALIZATION
+  // --------------------------
   function ShopifyBuyInit() {
     const client = ShopifyBuy.buildClient({
       domain: 'e22ba0-52.myshopify.com',
@@ -124,6 +164,9 @@ lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.st
           options: defaultOptions
         });
       });
+
+      // ✅ Initialize search after Shopify components have loaded
+      setTimeout(initializeSearchFilter, 1000);
     });
   }
 
@@ -137,4 +180,7 @@ lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.st
     document.head.appendChild(script);
     script.onload = ShopifyBuyInit;
   }
+
+  
+
 })();

@@ -11,22 +11,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Logo -->
+    <img src="VA-Logo-NoBG.png" alt="Video Assault Logo" id="logo" />
+
+    <!-- Floating Search Bar -->
+    <input
+    type="text"
+    id="search-bar"
+    placeholder="SEARCH PRINTS..."
+    autocomplete="off"
+    />
 
 <div class="container">
   <!-- Side menu -->
   <nav>
-    <img src="VA-Logo-NoBG.png" alt="Video Assault Logo" id="logo" />
-
-    <div class="links">
-      <a>PRINT ARCHIVE</a>
-      <a>MERCH</a>
-      <a>RIG RUNDOWN</a>
-      <a>FOLLOW</a>
-    </div>
-
-    <div class="bottom">
-      <div class="counter">PRINT COUNT: 16</div>
-    </div>
+    
   </nav>
 
   <!-- Main content -->
@@ -44,14 +43,10 @@
           <div id='product-component-2'></div>
         </div>
 
-        
-
-        <div class="tile"><img src="Prints/XeroxScanTest2.jpg" alt=""></div>
+    
         <div class="tile"><img src="Prints/XeroxScanTest3.jpg" alt=""></div>
-        <div class="tile"><img src="print4.jpg" alt=""></div>
-        <div class="tile"><img src="print5.jpg" alt=""></div>
-        <div class="tile"><img src="print6.jpg" alt=""></div>
-      </div>
+        <div class="tile"><img src="Prints/XeroxScanTest2.jpg" alt=""></div>
+
     </div>
   </div>
 </div>
@@ -60,6 +55,11 @@
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img class="lightbox-content" id="lightbox-img" alt="">
+</div>
+
+<!-- Print Counter -->
+<div class="bottom">
+    <div class="counter" id="print-counter">PRINT COUNT: 0</div>
 </div>
 
 <!-- JS -->
