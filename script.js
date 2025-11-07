@@ -27,8 +27,15 @@ lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.st
     {
       id: '8872419819755',
       nodeId: 'product-component-2',
-      title: 'Test2'
+      title: 'MOBRULE'
+    },
+    {
+      id: '9144164614379',
+      nodeId: 'product-component-3',
+      title: 'IRONSIGHTS'
     }
+
+    
     // Add future products here with titles:
     // { id: 'NEW_ID', nodeId: 'NEW_NODE_ID', title: 'Product Name' }
   ];
