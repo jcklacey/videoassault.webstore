@@ -194,7 +194,7 @@ nav {
   /* Shrink & reposition logo for mobile */
   #logo {
     position: static;
-    width: 80%;       
+    width: 90%;       
     top: 10px;        /* distance from top of viewport */
   }
 
@@ -224,6 +224,7 @@ nav {
     bottom: 10px;
     left: 10px;
     font-size: 16px;
-    font-family: "Arial Black", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
   }
 }
