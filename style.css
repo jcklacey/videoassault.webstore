@@ -194,7 +194,7 @@ nav {
   /* Shrink & reposition logo for mobile */
   #logo {
     position: static;
-    width: 100%;       
+    width: 80%;       
     top: 10px;        /* distance from top of viewport */
   }
 
