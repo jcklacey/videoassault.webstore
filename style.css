@@ -193,10 +193,9 @@ nav {
 
   /* Shrink & reposition logo for mobile */
   #logo {
-    position: fixed;
+    position: static;
     width: 100%;       
     top: 10px;        /* distance from top of viewport */
-    left: 10px;
   }
 
   /* Search bar under the logo */
