@@ -253,3 +253,20 @@ nav {
     right: 10px !important;
   }
 }
+
+/* Override Shopify "added to cart" green state */
+.shopify-buy__btn[disabled],
+.shopify-buy__btn--disabled,
+.shopify-buy__btn--added {
+  background-color: #9c2b2bff !important; /* your red tone */
+  color: #000000ff !important;
+  opacity: 1 !important;
+}
+
+.shopify-buy__btn[disabled]:hover,
+.shopify-buy__btn--disabled:hover,
+.shopify-buy__btn--added:hover {
+  background-color: #ae3d3dff !important; /* hover red */
+}
+
+
