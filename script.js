@@ -111,7 +111,7 @@ function initializeSearchFilter() {
           "margin-top": "4px",
           "cursor": "pointer",
           "border": "none",
-          ":hover": { "background-color": "#a62929" }
+          ":hover": { "background-color": "#7390c2ff" }
         }
       },
       text: { button: "ADD TO CART" },
@@ -137,8 +137,8 @@ function initializeSearchFilter() {
     cart: {
       styles: {
         button: {
-          "background-color": "#b82e2e",
-          ":hover": { "background-color": "#a62929" },
+          "background-color": "#4a6aa2ff",
+          ":hover": { "background-color": "#7390c2ff" },
           "font-family": "Arial Black, sans-serif",
           "color": "#111"
         }
@@ -191,3 +191,4 @@ function initializeSearchFilter() {
   
 
 })();
+
