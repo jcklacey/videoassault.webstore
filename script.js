@@ -90,19 +90,19 @@ function initializeSearchFilter() {
         title: {
           "font-size": "16px",
           "color": "#111",
-          "background-color": "#f4f3e6",
+          "background-color": "#f8f7eb",
           "margin-bottom": "4px",
           "letter-spacing": "0.5px"
         },
         price: {
           "font-size": "12px",
           "color": "#000000ff",
-          "background-color": "#f4f3e6",
+          "background-color": "#f8f7eb",
           "margin-top": "0px",
           "margin-bottom": "0px"
         },
         button: {
-          "background-color": "#9c2b2bff",
+          "background-color": "#aaa",
           "font-family": "Arial Black, sans-serif",
           "font-size": "14px",
           "color": "#000000ff",
@@ -111,7 +111,7 @@ function initializeSearchFilter() {
           "margin-top": "4px",
           "cursor": "pointer",
           "border": "none",
-          ":hover": { "background-color": "#ae3d3dff" }
+          ":hover": { "background-color": "#cabfb7ff" }
         }
       },
       text: { button: "ADD TO CART" },
@@ -125,7 +125,7 @@ function initializeSearchFilter() {
           "padding": "0px 0px",
           "border-radius": "4px",
           "border": "1px solid #aaa",
-          "background-color": "#f4f3e6",
+          "background-color": "#f8f7eb",
           "color": "#111",
           "min-width": "140px",
           "max-width": "160px",
@@ -137,8 +137,8 @@ function initializeSearchFilter() {
     cart: {
       styles: {
         button: {
-          "background-color": "#9c2b2bff",
-          ":hover": { "background-color": "#ae3d3dff" },
+          "background-color": "#aaa",
+          ":hover": { "background-color": "#cabfb7ff" },
           "font-family": "Arial Black, sans-serif",
           "color": "#111"
         }
@@ -149,9 +149,9 @@ function initializeSearchFilter() {
       styles: {
         toggle: 
         {"color": "#111",
-         "background-color": "#9c2b2bff",
+         "background-color": "#aaa",
          "font-family": "Arial Black, sans-serif",
-         ":hover": { "background-color": "#ae3d3dff" } }
+         ":hover": { "background-color": "#cabfb7ff" } }
       }
     }
   };
