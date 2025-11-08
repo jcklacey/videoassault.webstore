@@ -229,3 +229,13 @@ nav {
     background-color: #fff;
   }
 }
+
+/* Force Shopify cart icon to bottom-right corner */
+.shopify-buy__cart-toggle {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;   /* remove any default middle alignment */
+  transform: none !important;
+  z-index: 9999 !important;
+}
