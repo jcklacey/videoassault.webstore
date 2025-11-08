@@ -79,6 +79,7 @@ nav {
 /* Grid tiles */
 .grid {
   display: grid;
+  margin-top: 2px;
   gap: 1px;
   width: calc(100vw - 140px);
   max-width: calc(100vw - 140px);
