@@ -148,7 +148,7 @@ function initializeSearchFilter() {
     toggle: {
       styles: {
         toggle: 
-        {"background-color": "#3f3939ff", ":hover": { "background-color": "#a62929" } }
+        {"background-color": "#3f3939ff", ":hover": { "background-color": "#5f5c5cff" } }
       }
     }
   };
