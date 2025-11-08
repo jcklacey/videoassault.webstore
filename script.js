@@ -90,14 +90,14 @@ function initializeSearchFilter() {
         title: {
           "font-size": "16px",
           "color": "#111",
-          "background-color": "#ffffffff",
+          "background-color": "#eeeddc",
           "margin-bottom": "4px",
           "letter-spacing": "0.5px"
         },
         price: {
           "font-size": "12px",
           "color": "#000000ff",
-          "background-color": "#ffffffff",
+          "background-color": "#eeeddc",
           "margin-top": "0px",
           "margin-bottom": "0px"
         },
@@ -125,7 +125,7 @@ function initializeSearchFilter() {
           "padding": "0px 0px",
           "border-radius": "4px",
           "border": "1px solid #aaa",
-          "background-color": "#fff",
+          "background-color": "#eeeddc",
           "color": "#111",
           "min-width": "140px",
           "max-width": "160px",
@@ -148,7 +148,7 @@ function initializeSearchFilter() {
     toggle: {
       styles: {
         toggle: 
-        {"background-color": "#9c2b2bff", ":hover": { "background-color": "#ae3d3dff" } }
+        {"color": "#111", "background-color": "#9c2b2bff", ":hover": { "background-color": "#ae3d3dff" } }
       }
     }
   };
