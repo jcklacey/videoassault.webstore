@@ -230,12 +230,26 @@ nav {
   }
 }
 
-/* Force Shopify cart icon to bottom-right corner */
+/* Force Shopify cart icon to bottom-right */
+.shopify-buy-frame--toggle,
 .shopify-buy__cart-toggle {
   position: fixed !important;
   bottom: 20px !important;
   right: 20px !important;
-  top: auto !important;   /* remove any default middle alignment */
+  top: auto !important;
+  left: auto !important;
   transform: none !important;
   z-index: 9999 !important;
+  margin: 0 !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* Optional: adjust for mobile view */
+@media (max-width: 800px) {
+  .shopify-buy-frame--toggle,
+  .shopify-buy__cart-toggle {
+    bottom: 60px !important;
+    right: 10px !important;
+  }
 }
