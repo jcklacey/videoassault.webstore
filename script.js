@@ -102,7 +102,7 @@ function initializeSearchFilter() {
           "margin-bottom": "0px"
         },
         button: {
-          "background-color": "#f37d22ff",
+          "background-color": "#ea751cff",
           "font-family": "Arial Black, sans-serif",
           "font-size": "14px",
           "color": "#000000ff",
@@ -124,7 +124,7 @@ function initializeSearchFilter() {
           "font-size": "14px",
           "padding": "0px 0px",
           "border-radius": "4px",
-          "border": "1px solid #f37d22ff",
+          "border": "1px solid #ea751cff",
           "background-color": "#f8f7eb",
           "color": "#111",
           "min-width": "140px",
@@ -137,7 +137,7 @@ function initializeSearchFilter() {
     cart: {
       styles: {
         button: {
-          "background-color": "#f37d22ff",
+          "background-color": "#ea751cff",
           ":hover": { "background-color": "#e3853eff" },
           "font-family": "Arial Black, sans-serif",
           "color": "#111"
@@ -149,7 +149,7 @@ function initializeSearchFilter() {
       styles: {
         toggle: 
         {"color": "#111",
-         "background-color": "#f37d22ff",
+         "background-color": "#ea751cff",
          "font-family": "Arial Black, sans-serif",
          ":hover": { "background-color": "#e3853eff" } }
       }
