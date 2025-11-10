@@ -102,7 +102,7 @@ function initializeSearchFilter() {
           "margin-bottom": "0px"
         },
         button: {
-          "background-color": "#58aff2",
+          "background-color": "#f3d722ff",
           "font-family": "Arial Black, sans-serif",
           "font-size": "14px",
           "color": "#000000ff",
@@ -111,7 +111,7 @@ function initializeSearchFilter() {
           "margin-top": "4px",
           "cursor": "pointer",
           "border": "none",
-          ":hover": { "background-color": "#74baf0ff" }
+          ":hover": { "background-color": "#d2bb27ff" }
         }
       },
       text: { button: "ADD TO CART" },
@@ -124,7 +124,7 @@ function initializeSearchFilter() {
           "font-size": "14px",
           "padding": "0px 0px",
           "border-radius": "4px",
-          "border": "1px solid #58aff2",
+          "border": "1px solid #f3d722ff",
           "background-color": "#f8f7eb",
           "color": "#111",
           "min-width": "140px",
@@ -137,8 +137,8 @@ function initializeSearchFilter() {
     cart: {
       styles: {
         button: {
-          "background-color": "#58aff2",
-          ":hover": { "background-color": "#74baf0ff" },
+          "background-color": "#f3d722ff",
+          ":hover": { "background-color": "#d2bb27ff" },
           "font-family": "Arial Black, sans-serif",
           "color": "#111"
         }
@@ -149,9 +149,9 @@ function initializeSearchFilter() {
       styles: {
         toggle: 
         {"color": "#111",
-         "background-color": "#58aff2",
+         "background-color": "#f3d722ff",
          "font-family": "Arial Black, sans-serif",
-         ":hover": { "background-color": "#74baf0ff" } }
+         ":hover": { "background-color": "#d2bb27ff" } }
       }
     }
   };
